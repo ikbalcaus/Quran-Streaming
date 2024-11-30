@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/static/index.css" />
+        <title>Quran Streaming</title>
+        <link rel="icon" href="/static/play-button.png" />
+    </head>
+    <body>
+        <div id="startup">
+            <img id="play-button" onclick="start()" src="/static/play-button.png" alt="button" />
+            <p id="api">API: <a href="https://quranapi.pages.dev">https://quranapi.pages.dev</a></p>
+        </div>
+        <div id="main">
+            <p id="title"></p>
+            <p id="text"></p>
+        </div>
+        <script>{% include "index.js" %}</script>
+        <noscript>You need to enable JavaScript to run this app</noscript>
+    </body>
+</html>
