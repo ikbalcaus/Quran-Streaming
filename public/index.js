@@ -24,6 +24,7 @@ function start() {
 
 function preload() {
     ayahNo++;
+    totalAyah = preloadedData.totalAyah;
     if (ayahNo > totalAyah) {
         ayahNo = 1;
         surahNo++;
